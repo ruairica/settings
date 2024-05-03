@@ -1,0 +1,65 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+up",
+    "command": "spaceBlockJumper.moveUp"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "spaceBlockJumper.moveDown"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "spaceBlockJumper.selectDown"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "spaceBlockJumper.selectUp"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.action.toggleCenteredLayout"
+  },
+  {
+    "key": "ctrl+alt+shift+s",
+    "command": "extension.multiCommand.execute",
+    "interval": 500,
+    "args": {
+      "sequence": ["o.fixAll.document", "enter", "workbench.action.files.save"]
+    }
+  },
+  {
+    "key": "ctrl+m",
+    "command": "center-editor-window.center",
+    "when": "editorTextFocus || findWidgetVisible"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-center-editor-window.center",
+    "when": "editorTextFocus || findWidgetVisible"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  // Toggle between terminal and editor focus
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.files.saveAll"
+  }
+]

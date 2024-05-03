@@ -1,0 +1,124 @@
+{
+  "angular.experimental-ivy": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.requireConfig": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "files.autoSave": "afterDelay",
+"editor.bracketPairColorization.enabled": true,
+"editor.language.colorizedBracketPairs": [
+    [
+        "[",
+        "]"
+    ],
+    [
+        "(",
+        ")"
+    ],
+    [
+        "{",
+        "}"
+    ]
+],
+  "editor.guides.bracketPairs": "active",
+  // The number of spaces a tab is equal to. This setting is overridden
+  // based on the file contents when `editor.detectIndentation` is true.
+"editor.tabSize": 4,
+"editor.fontFamily": "0xProto Nerd Font Mono",
+"terminal.integrated.fontFamily": "'0xProto Nerd Font Mono'",
+"editor.fontLigatures": true,
+  // Insert spaces when pressing Tab. This setting is overriden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.insertSpaces": true,
+
+  // When opening a file, `editor.tabSize` and `editor.insertSpaces`
+  // will be detected based on the file contents. Set to false to keep
+  // the values you've explicitly set, above.
+  "editor.detectIndentation": false,
+  "workbench.iconTheme": "material-icon-theme",
+
+  //max tabs
+  "workbench.editor.limit.enabled": true,
+"workbench.editor.limit.value": 6,
+"files.trimTrailingWhitespace": true,
+"files.trimFinalNewlines": true,
+"editor.inlayHints.enabled": "on",
+"editor.inlayHints.fontSize": 10,
+"editor.inlayHints.padding": false,
+
+"omnisharp.enableRoslynAnalyzers": true,
+  "omnisharp.enableAsyncCompletion": true,
+"omnisharp.organizeImportsOnFormat": true,
+"omnisharp.enableEditorConfigSupport": true,
+  "redhat.telemetry.enabled": false,
+  "html.format.wrapAttributes": "preserve-aligned",
+  "html.format.wrapLineLength": 200,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+},
+  "dotnet-test-explorer.testProjectPath": "\"**/*Test.csproj\"",
+  "atlascode.bitbucket.explorer.notifications.pullRequestCreated": false,
+  "atlascode.bitbucket.explorer.relatedBitbucketIssues.enabled": false,
+"editor.minimap.maxColumn": 100,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+},
+"azureFunctions.pickProcessTimeout": 120,
+"workbench.colorTheme": "One Monokai",
+"javascript.updateImportsOnFileMove.enabled": "always",
+"typescript.updateImportsOnFileMove.enabled": "always",
+"git.autofetch": true,
+"editor.mouseWheelZoom": true,
+"workbench.colorCustomizations": {},
+"[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+},
+"svelte.enable-ts-plugin": true,
+"[python]": {
+    "editor.formatOnType": true
+},
+"[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+},
+"explorer.confirmDragAndDrop": false,
+"[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+
+
+"json.format.enable": false,
+
+"editor.formatOnPaste": true,
+
+
+"[typescript]": {
+  "editor.tabSize": 2
+},
+"[scss]": {
+  "editor.tabSize": 2
+},
+"dotnet.inlayHints.enableInlayHintsForParameters": true,
+"dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+"csharp.inlayHints.enableInlayHintsForTypes": true,
+"csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+"dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+"workbench.editor.pinnedTabsOnSeparateRow": true,
+"git.openRepositoryInParentFolders": "always",
+"editor.minimap.enabled": false,
+"github.copilot.editor.enableCodeActions": false,
+
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+"[azure-pipelines]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"azure.resourceFilter": [
+    "4af8322c-80ee-4819-a9ce-863d5afbea1c/b4ebf08c-db24-41db-afe2-54b567cecda4"
+],
+}
