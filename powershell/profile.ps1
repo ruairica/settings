@@ -63,6 +63,11 @@ function Do-GoToAocFolder {
     Set-Location 'C:/Source/personal/AdventOfCode/AdventOfCode/CSharp/Aoc/Aoc'
 }
 
+function Do-OpenRemoteRepositoryInBrowser {
+    $remoteUrl  = git remote get-url origin
+    start $remoteUrl
+}
+
 
 # recursive folder fuzzy search using fzf and ripgrep (requires fzf and ripgrep to be installed)
 function frg {
@@ -76,6 +81,7 @@ if ($result) {
 }
 }
 
+Set-Alias openrepo Do-OpenRemoteRepositoryInBrowser
 Set-Alias delstale Do-DeleteStaleBranches
 Set-Alias repos Do-GoToRepos
 Set-Alias aoc Do-GoToAocFolder
