@@ -1,124 +1,218 @@
 {
-  "angular.experimental-ivy": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.requireConfig": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "files.autoSave": "afterDelay",
-"editor.bracketPairColorization.enabled": true,
-"editor.language.colorizedBracketPairs": [
+  "editor.bracketPairColorization.enabled": true,
+  "editor.language.colorizedBracketPairs": [
     [
-        "[",
-        "]"
+      "[",
+      "]"
     ],
     [
-        "(",
-        ")"
+      "(",
+      ")"
     ],
     [
-        "{",
-        "}"
+      "{",
+      "}"
     ]
-],
+  ],
+  "zenMode.centerLayout": false,
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.statusBarItem.enabled": true,
   "editor.guides.bracketPairs": "active",
-  // The number of spaces a tab is equal to. This setting is overridden
-  // based on the file contents when `editor.detectIndentation` is true.
-"editor.tabSize": 4,
-"editor.fontFamily": "0xProto Nerd Font Mono",
-"terminal.integrated.fontFamily": "'0xProto Nerd Font Mono'",
-"editor.fontLigatures": true,
-  // Insert spaces when pressing Tab. This setting is overriden
-  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.tabSize": 4,
+  "editor.fontFamily": "0xProto Nerd Font Mono",
+  "terminal.integrated.fontFamily": "'0xProto Nerd Font Mono'",
+  "editor.fontLigatures": true,
   "editor.insertSpaces": true,
-
-  // When opening a file, `editor.tabSize` and `editor.insertSpaces`
-  // will be detected based on the file contents. Set to false to keep
-  // the values you've explicitly set, above.
   "editor.detectIndentation": false,
   "workbench.iconTheme": "material-icon-theme",
-
-  //max tabs
   "workbench.editor.limit.enabled": true,
-"workbench.editor.limit.value": 6,
-"files.trimTrailingWhitespace": true,
-"files.trimFinalNewlines": true,
-"editor.inlayHints.enabled": "on",
-"editor.inlayHints.fontSize": 10,
-"editor.inlayHints.padding": false,
-
-"omnisharp.enableRoslynAnalyzers": true,
+  "workbench.editor.limit.value": 6,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.inlayHints.fontSize": 10,
+  "editor.inlayHints.padding": false,
+  "omnisharp.enableRoslynAnalyzers": true,
   "omnisharp.enableAsyncCompletion": true,
-"omnisharp.organizeImportsOnFormat": true,
-"omnisharp.enableEditorConfigSupport": true,
+  "omnisharp.enableEditorConfigSupport": true,
   "redhat.telemetry.enabled": false,
   "html.format.wrapAttributes": "preserve-aligned",
   "html.format.wrapLineLength": 200,
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
-},
-  "dotnet-test-explorer.testProjectPath": "\"**/*Test.csproj\"",
-  "atlascode.bitbucket.explorer.notifications.pullRequestCreated": false,
-  "atlascode.bitbucket.explorer.relatedBitbucketIssues.enabled": false,
-"editor.minimap.maxColumn": 100,
+  },
+  "editor.minimap.maxColumn": 100,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "explicit"
-},
-"azureFunctions.pickProcessTimeout": 120,
-"workbench.colorTheme": "One Monokai",
-"javascript.updateImportsOnFileMove.enabled": "always",
-"typescript.updateImportsOnFileMove.enabled": "always",
-"git.autofetch": true,
-"editor.mouseWheelZoom": true,
-"workbench.colorCustomizations": {},
-"[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-},
-"svelte.enable-ts-plugin": true,
-"[python]": {
-    "editor.formatOnType": true
-},
-"[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-},
-"explorer.confirmDragAndDrop": false,
-"[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-
-
-"json.format.enable": false,
-
-"editor.formatOnPaste": true,
-
-
-"[typescript]": {
-  "editor.tabSize": 2
-},
-"[scss]": {
-  "editor.tabSize": 2
-},
-"dotnet.inlayHints.enableInlayHintsForParameters": true,
-"dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
-"csharp.inlayHints.enableInlayHintsForTypes": true,
-"csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
-"dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
-"workbench.editor.pinnedTabsOnSeparateRow": true,
-"git.openRepositoryInParentFolders": "always",
-"editor.minimap.enabled": false,
-"github.copilot.editor.enableCodeActions": false,
-
-  "prettier.documentSelectors": ["**/*.astro"],
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-"[azure-pipelines]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"azure.resourceFilter": [
+  "azureFunctions.pickProcessTimeout": 120,
+  "workbench.colorTheme": "One Monokai",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.autofetch": true,
+  "editor.mouseWheelZoom": true,
+  "workbench.colorCustomizations": {
+  "editorInlayHint.foreground": "#555555",
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "[json]": {},
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "yaml.format.singleQuote": true,
+  "json.format.enable": false,
+  "editor.formatOnPaste": true,
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.tabSize": 2
+  },
+  "dotnet.inlayHints.enableInlayHintsForParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+  "csharp.inlayHints.enableInlayHintsForTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "git.openRepositoryInParentFolders": "always",
+  "editor.minimap.enabled": false,
+  "chat.editing.autoAcceptDelay": 20,
+  "chat.tools.autoApprove": true,
+  "chat.agent.maxRequests": 100,
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
+  "azure.resourceFilter": [
     "4af8322c-80ee-4819-a9ce-863d5afbea1c/b4ebf08c-db24-41db-afe2-54b567cecda4"
+  ],
+  "azureLogicAppsStandard.autoRuntimeDependenciesPath": "C:\\Users\\ruairi.caldwell\\.azurelogicapps\\dependencies",
+  "azureLogicAppsStandard.nodeJsBinaryPath": "C:\\Users\\ruairi.caldwell\\.azurelogicapps\\dependencies\\NodeJs\\node",
+  "azureLogicAppsStandard.funcCoreToolsBinaryPath": "C:\\Users\\ruairi.caldwell\\.azurelogicapps\\dependencies\\FuncCoreTools\\func",
+  "azureLogicAppsStandard.dotnetBinaryPath": "C:\\Users\\ruairi.caldwell\\.azurelogicapps\\dependencies\\DotNetSDK\\dotnet.exe",
+  "azureLogicAppsStandard.pickProcessTimeout": 180,
+  "editor.indentSize": "tabSize",
+  "dotnet.formatting.organizeImportsOnFormat": true,
+  "azureLogicAppsStandard.azuriteLocationSetting": "C:\\Users\\ruairi.caldwell\\.azurelogicapps\\.azurite",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "azureLogicAppsStandard.showCoreToolsWarning": false,
+  "azureLogicAppsStandard.showDotNetWarning": false,
+  "files.exclude": {
+    "**/bin/**": true,
+    "**/Debug/**": true,
+    "**/obj/**": true,
+    "**/Release/**": true
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+"powershell.promptToUpdatePowerShell": false,
+"@azure.argTenant": "",
+  "azureResourceGroups.selectedSubscriptions": [
+    "4af8322c-80ee-4819-a9ce-863d5afbea1c/b4ebf08c-db24-41db-afe2-54b567cecda4"
+  ],
+  "chat.tools.terminal.autoApprove": {
+    "dotnet run": true,
+    "dotnet test": true,
+    "dotnet build": true,
+    "/^python --version$/": {
+        "approve": true,
+        "matchCommandLine": true
+    },
+    "dotnet format": true,
+    "Set-Location": true,
+    "dotnet tool": true,
+    "git -C \"c:\\Source\\asos-partnerapps-afs-shipping-api\"": true,
+    "/^dotnet --info$/": {
+        "approve": true,
+        "matchCommandLine": true
+    },
+    "dotnet add": true,
+    "dotnet restore": true,
+    "/^az account show --only-show-errors -o json$/": {
+        "approve": true,
+        "matchCommandLine": true
+    },
+    "/^az account set --subscription 775e9939-96af-4f93-a42a-d86c9beb2ff0; az acr show --name aspdcore --query \"loginServer\" -o tsv --only-show-errors$/": {
+        "approve": true,
+        "matchCommandLine": true
+    },
+    "/^\\$repoSdk='dotnet-9/sdk'; \\$repoRuntime='dotnet-9/runtime';\nfunction Get-LatestPinnedAcrTag\\(\\[string\\]\\$Repo,\\[string\\]\\$CurrentTag\\)\\{\n  \\$majorMinorPrefix=\\$null\n  if\\(\\$CurrentTag -match '\\^\\(\\\\d\\+\\)\\\\\\.\\(\\\\d\\+\\)'\\)\\{ \\$majorMinorPrefix=\"\\$\\(\\$Matches\\[1\\]\\)\\.\\$\\(\\$Matches\\[2\\]\\)\\.\" \\}\n  \\$tags = az acr repository show-tags -n aspdcore --repository \\$Repo --orderby time_desc --top 50 -o tsv --only-show-errors\n  \\$pinned = \\$tags \\| Where-Object \\{ \\$_ -match '\\^\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\(\\?:\\\\\\.\\\\d\\+\\)\\?\\$' \\} \\| Where-Object \\{ \\$_ -notmatch '-' \\}\n  if\\(\\$majorMinorPrefix\\)\\{ \\$pinned = \\$pinned \\| Where-Object \\{ \\$_\\.StartsWith\\(\\$majorMinorPrefix\\) \\} \\}\n  \\$latest = \\$pinned \\| Select-Object -First 1\n  if\\(-not \\$latest\\)\\{ throw \"No pinned numeric tags found for '\\$Repo' \\(current '\\$CurrentTag'\\)\\.\" \\}\n  \\$latest\n\\}\n\\$sdkLatest = Get-LatestPinnedAcrTag \\$repoSdk '9\\.0\\.606'\n\\$runtimeLatest = Get-LatestPinnedAcrTag \\$repoRuntime '9\\.0\\.592'\n\"\\$repoSdk:9\\.0\\.606 -> \\$repoSdk:\\$sdkLatest\"\n\"\\$repoRuntime:9\\.0\\.592 -> \\$repoRuntime:\\$runtimeLatest\"\n$/": {
+        "approve": true,
+        "matchCommandLine": true
+    },
+    "/^az account set --subscription 775e9939-96af-4f93-a42a-d86c9beb2ff0 ; az acr show --name aspdcore --query \"loginServer\" -o tsv --only-show-errors$/": {
+        "approve": true,
+        "matchCommandLine": true
+    },
+    "/^\\$sdk = az acr repository show-tags -n aspdcore --repository \"dotnet-9/sdk\" --orderby time_desc --top 25 -o tsv --only-show-errors \\| Where-Object \\{ \\$_ -match '\\^\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\(\\?:\\\\\\.\\\\d\\+\\)\\?\\$' -and \\$_ -notmatch '-' \\} \\| Select-Object -First 1 ; \\$rt = az acr repository show-tags -n aspdcore --repository \"dotnet-9/runtime\" --orderby time_desc --top 25 -o tsv --only-show-errors \\| Where-Object \\{ \\$_ -match '\\^\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\(\\?:\\\\\\.\\\\d\\+\\)\\?\\$' -and \\$_ -notmatch '-' \\} \\| Select-Object -First 1 ; \"sdk=\\$sdk`nruntime=\\$rt\"$/": {
+        "approve": true,
+        "matchCommandLine": true
+    },
+    "/^\\$sdk = az acr repository show-tags -n aspdcore --repository \"dotnet-9/sdk\" --orderby time_desc --top 25 -o tsv --only-show-errors \\| Where-Object \\{ \\$_ -match '\\^\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\(\\?:\\\\\\.\\\\d\\+\\)\\?\\$' -and \\$_ -notmatch '-' \\} \\| Where-Object \\{ \\$_\\.StartsWith\\('9\\.0\\.'\\) \\} \\| Select-Object -First 1\n\\$aspnet = az acr repository show-tags -n aspdcore --repository \"dotnet-9/aspnet\" --orderby time_desc --top 25 -o tsv --only-show-errors \\| Where-Object \\{ \\$_ -match '\\^\\\\d\\+\\\\\\.\\\\d\\+\\\\\\.\\\\d\\+\\(\\?:\\\\\\.\\\\d\\+\\)\\?\\$' -and \\$_ -notmatch '-' \\} \\| Where-Object \\{ \\$_\\.StartsWith\\('9\\.0\\.'\\) \\} \\| Select-Object -First 1\n\"sdk=\\$sdk\"\n\"aspnet=\\$aspnet\"$/": {
+        "approve": true,
+        "matchCommandLine": true
+    },
+    "gh": true,
+    "git rev-parse": true,
+    "git fetch": true
+},
+  "cSpell.diagnosticLevel": "Hint",
+  "chat.tools.urls.autoApprove": {
+    "https://*.testcontainers.org": {
+      "approveRequest": false,
+      "approveResponse": true
+    },
+    "https://dotnet.testcontainers.org": {
+      "approveRequest": true,
+      "approveResponse": false
+    }
+  },
+  "chat.agent.thinkingStyle": "collapsedPreview",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "chat.viewSessions.enabled": false,
+  "claudeCode.preferredLocation": "sidebar",
+  "chat.useAgentSkills": true,
+"chat.useNestedAgentsMdFiles": true,
+"dotnet.automaticallyCreateSolutionInWorkspace": false,
+"claudeCode.selectedModel": "opus",
+"python.terminal.activateEnvInCurrentTerminal": true,
+"python.analysis.extraPaths": [
+    ".venv\\Lib\\site-packages",
+    "app\\.venv\\Lib\\site-packages",
+    "cron\\.venv\\Lib\\site-packages"
 ],
+"python.autoComplete.extraPaths": [
+    "app\\.venv\\Lib\\site-packages",
+    "cron\\.venv\\Lib\\site-packages",
+    ".venv\\Lib\\site-packages"
+],
+"github.copilot.chat.responsesApiReasoningEffort": "high"
 }

@@ -1,5 +1,21 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "when": "terminalFocus",
+        "args": {
+            "text": "\\\r\n"
+        }
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "when": "terminalFocus",
+        "args": {
+            "text": "\\\r\n"
+        }
+    },
   {
     "key": "ctrl+up",
     "command": "spaceBlockJumper.moveUp"
@@ -61,5 +77,27 @@
   {
     "key": "ctrl+shift+s",
     "command": "workbench.action.files.saveAll"
-  }
+},
+{
+    "key": "tab",
+    "command": "-editor.emmet.action.expandAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+},
+{
+    "key": "tab",
+    "command": "-tabout",
+    "when": "editorTextFocus && !editorHasMultipleSelections && !inSnippetMode && !inlineSuggestionVisible && !suggestWidgetVisible"
+},
+{
+    "key": "ctrl+alt+k",
+    "command": "opencode.addFilepathToTerminal"
+},
+{
+    "key": "ctrl+alt+k",
+    "command": "-opencode.addFilepathToTerminal"
+},
+{
+    "key": "ctrl+alt+oem_2",
+    "command": "workbench.action.chat.attachFile"
+}
 ]
