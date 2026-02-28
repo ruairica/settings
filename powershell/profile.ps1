@@ -143,12 +143,30 @@ function Out-Default {
 }
 function Copy-LastOutput { $global:__LastOutput | Out-String | Set-Clipboard }
 
+function fcd {
+    $result = Get-ChildItem -Directory | ForEach-Object { $_.Name } |
+    fzf --preview 'dir /b {}'
+    if ($result) {
+        Set-Location $result
+    }
+}
+
+function fcdr {
+    $result = Get-ChildItem -Directory -Recurse | ForEach-Object { $_.FullName.Substring((Get-Location).Path.Length + 1) } |
+    fzf --preview 'dir /b {}'
+    if ($result) {
+        Set-Location $result
+    }
+}
+
 Set-Alias openrepo Do-OpenRemoteRepositoryInBrowser
 Set-Alias delstale Do-DeleteStaleBranches
 Set-Alias repos Do-GoToRepos
 Set-Alias aoc Do-GoToAocFolder
 Set-Alias notepad Do-OpenNotePadPlus
 Set-Alias fg frg
+Set-Alias fd fcd
+Set-Alias fdr fcdr
 Set-Alias lg lazygit
 Set-Alias ld lazydocker
 Set-Alias usr Do-usersecretsretrieve
@@ -161,6 +179,7 @@ Set-Alias ghpl Do-GetHithubPrPipeline
 Set-Alias mkcd Do-mkcd
 Set-Alias cc claude
 Set-Alias subs "C:\Source\personal\az-subscriptions-tui\Az.Subscriptions\bin\Release\net8.0\Az.Subscriptions.exe"
+Set-Alias dev "C:\Source\personal\MaximizeToVirtualDesktop\src\DevDesk\bin\Release\net10.0-windows\win-x64\publish\DevDesk.exe"
 
 Set-Alias e Do-OpenExplorerHere
 Set-Alias c Start-VsCodeHere
@@ -182,10 +201,10 @@ function global:_DeferredLoad {
     if ($global:_DeferredLoadDone) { return }
     $global:_DeferredLoadDone = $true
 
-    # Module imports
+    # PSReadLine and Terminal-Icons must be explicitly imported.
+    # z is auto-imported by PowerShell on first use.
     Import-Module PSReadLine
     Import-Module -Name Terminal-Icons
-    Import-Module z
 
     # --- PSReadLine options ---
     Set-PSReadLineOption -EditMode Windows
