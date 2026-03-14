@@ -3,6 +3,8 @@ using namespace System.Management.Automation.Language
 
 # --- Eager: lightweight items that are instant (functions, aliases, completers) ---
 
+Import-Module z
+
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
     [Console]::InputEncoding = [Console]::OutputEncoding = $OutputEncoding = [System.Text.Utf8Encoding]::new()
@@ -54,7 +56,7 @@ function Do-OpenVisualStudio {
 function GoToRepos {
     Clear-Host
     Set-Location 'C:/Source'
-    Get-ChildItem
+    fcd
 }
 
 function Do-GoToAocFolder {
@@ -85,7 +87,7 @@ function DotnetFormatVerify {
     dotnet format --verify-no-changes @args
 }
 
-function Mkcd {
+function Do-Mkcd {
     mkdir @args && Set-Location @args
 }
 
@@ -144,8 +146,9 @@ function Out-Default {
 function Copy-LastOutput { $global:__LastOutput | Out-String | Set-Clipboard }
 
 function fcd {
+    $query = $args -join ' '
     $result = Get-ChildItem -Directory | ForEach-Object { $_.Name } |
-    fzf --preview 'dir /b {}'
+    fzf --preview 'dir /b {}' --query "$query"
     if ($result) {
         Set-Location $result
     }
@@ -176,7 +179,7 @@ Set-Alias dfv DotnetFormatVerify
 Set-Alias ghpr Do-GetHithubPr
 Set-Alias ghpl Do-GetHithubPrPipeline
 
-Set-Alias mkcd Mkcd
+Set-Alias mkcd Do-Mkcd
 Set-Alias cc claude
 Set-Alias subs "C:\Source\personal\az-subscriptions-tui\Az.Subscriptions\bin\Release\net8.0\Az.Subscriptions.exe"
 Set-Alias dev "C:\Source\personal\MaximizeToVirtualDesktop\src\DevDesk\bin\Release\net10.0-windows\win-x64\publish\DevDesk.exe"
@@ -201,7 +204,6 @@ function global:_DeferredLoad {
     $global:_DeferredLoadDone = $true
 
     # PSReadLine and Terminal-Icons must be explicitly imported.
-    # z is auto-imported by PowerShell on first use.
     Import-Module PSReadLine
     Import-Module -Name Terminal-Icons
 
