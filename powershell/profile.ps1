@@ -92,11 +92,11 @@ function Do-Mkcd {
 }
 
 function Do-GetHithubPr {
-    gh-util -pr
+    gh-util -pr @args
 }
 
 function Do-GetHithubPrPipeline {
-    gh-util -ci
+    gh-util -ci @args
 }
 
 function frg {
